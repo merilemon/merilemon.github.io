@@ -9,65 +9,65 @@
     <meta name="viewport" content="width=device-width">
     <title>meriele's silly little portfolio</title>
     <link href="./styles/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header class="site-header">
-        <h1 id="header">meriele</h1>
-        <nav>
-            <table>
-                <tr>
-                    <td><a href="#about">about</a></td>
-                    <td><a href="#works">works</a></td>
-                    <td><a href="#contacts">get in touch</a></td>
-                </tr>
-            </table>
-        </nav>
+        <div>
+            <h1 id="header">meriele</h1>
+        </div>
+        <div class="nav">
+            <nav>
+                <a href="#about">about</a>
+                <a href="#works">works</a>
+                <a href="#contacts">get in touch</a>
+            </nav>
+        </div>  
     </header>
     <main>
         <section id="about"> <!-- each h1 are jumplinked to go back to the top, no more needless scrolling !! -->
             <div class="picture">
-                <img src="./images/me.jpg" width="400px"></img>
+                <img class="me" src="./images/me.jpg" width="400px"></img>
             </div>  
             <div class="text">
                 <a href="#header"><h2>about</h2></a>
                 <p>Hi I'm Meriele! I am a student at SAIT enrolled in the Interactive Design Diploma in the UX stream.</p>
-                <p>With this website I hope to practice my skills as a web developer and, by the end of this course, hopefully get good enough to be considered the following:</p>
-                <ul>
-                    <li>competent</li>
-                    <li>desirable</li>
-                    <li>employable</li>
-                </ul>
+                <p>With this website I hope to practice my skills as a web developer and, by the end of this course, hopefully get good enough to be considered the following: competent, desirable, and employable.
                 <p>yep! you heard that right. I, like the million of other creatives in the world right now, want a job out of this *audience gasps*</p>
+
+                <h3>skills</h3>
+
+                <table class="skills">
+                    <tr>
+                        <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/pr_appicon.svg"></td>
+                        <td id="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/ae_appicon.svg"></td>
+                        <td id="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></i></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/ps_appicon.svg"></td>
+                        <td id="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/ai_appicon.svg"></td>
+                        <td id="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></td>
+                    </tr>
+                </table>
             </div>
         </section>
-        <section id="skills">
-            <p>here are my proficiencies with programs</p>
-        
-            <table style="text-align: center;">
-                <tr>
-                    <th>Adobe After Effects</th>
-                    <td>Advanced</td>
-                </tr>
-                <tr>
-                    <th>Adobe Illustrator</th>
-                    <td>Beginner</td>
-                </tr>
-                <tr>
-                    <th>Adobe Photoshop</th>
-                    <td>Intermediate</td>
-                </tr>
-                <tr>
-                    <th>Adobe Premiere Pro</th>
-                    <td>Advanced</td>
-                </tr>
-            </table>
-        </section>
-            <p>So without further ado: my portfiolio!</p>
-        </section>
+
+        <a href="#header"><h2>works</h2></a>
         <section id="works">
-            <a href="#header"><h2>works</h2></a>
-            <table>
+            <div class="portimg">
+                <img src="./images/img_the_favourite_poster.jpg" alt="movie poster hand with red rope attached to a crown." width="400px">
+                <img src="./images/img_scott_pilgrim_vs_the_world.jpg" alt="movie poster with purple background" width="400px">
+                <img src="./images/img_russian_doll_poster.jpg" alt= "abstract psoter of russian doll" width="400px">
+            </div>
+            
+           <!-- <table>
                 <tr>
                     <th>The Favourite (2018)</th>
                     <th>Scott Pilgrim vs the World (2010)</th>
@@ -94,9 +94,9 @@
                     </td>
                     <td style="text-align:center;">
                         <video src="./images/scott_pilgrim_v_the_world.mp4" width="355" title="scott pilgrim v the world" controls></video>
-                    </td> <!-- evidently there's an obsession with this particular movie ... -->
+                    </td> <!-- evidently there's an obsession with this particular movie ... --
                 </tr>
-            </table>
+            </table>-->        
         </section>
         <section id="contacts">
             <a href="#header"><h2>get in touch</h2></a>
