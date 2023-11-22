@@ -3,16 +3,16 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>meriele's silly little portfolio</title>
+    <link href="./styles/styles.css" rel="stylesheet" />
 </head>
 
-<link href="styles/styles.css" rel="stylesheet" />
-
 <body>
-    <header>
+    <header class="site-header">
         <h1 id="header">meriele</h1>
         <nav>
             <table>
@@ -25,17 +25,25 @@
         </nav>
     </header>
     <main>
-        <section id="about">
-            <a href="#header"><h2>about</h2></a> <!-- each h1 are jumplinked to go back to the top, no more needless scrolling !! -->
-            <p>Hi I'm Meriele! I am a student at SAIT enrolled in the Interactive Design Diploma in the UX stream.</p>
-            <p>With this website I hope to practice my skills as a web developer and, by the end of this course, hopefully get good enough to be considered the following:</p>
-            <ul style="list-style-type: circle">
-                <li>competent</li>
-                <li>desirable</li>
-                <li>employable</li>
-            </ul>
-            <p>yep! you heard that right. I, like the million of other creatives in the world right now, want a job out of this *audience gasps*</p>
+        <section id="about"> <!-- each h1 are jumplinked to go back to the top, no more needless scrolling !! -->
+            <div class="picture">
+                <img src="./images/me.jpg" width="400px"></img>
+            </div>  
+            <div class="text">
+                <a href="#header"><h2>about</h2></a>
+                <p>Hi I'm Meriele! I am a student at SAIT enrolled in the Interactive Design Diploma in the UX stream.</p>
+                <p>With this website I hope to practice my skills as a web developer and, by the end of this course, hopefully get good enough to be considered the following:</p>
+                <ul>
+                    <li>competent</li>
+                    <li>desirable</li>
+                    <li>employable</li>
+                </ul>
+                <p>yep! you heard that right. I, like the million of other creatives in the world right now, want a job out of this *audience gasps*</p>
+            </div>
+        </section>
+        <section id="skills">
             <p>here are my proficiencies with programs</p>
+        
             <table style="text-align: center;">
                 <tr>
                     <th>Adobe After Effects</th>
@@ -54,6 +62,7 @@
                     <td>Advanced</td>
                 </tr>
             </table>
+        </section>
             <p>So without further ado: my portfiolio!</p>
         </section>
         <section id="works">
