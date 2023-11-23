@@ -8,12 +8,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>meriele's silly little portfolio</title>
-    <link href="./styles/styles.css" rel="stylesheet" />
+    <link href="./styles/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header class="site-header">
+    <header id="site-header">
         <div>
             <h1>meriele</h1>
         </div>
@@ -26,12 +26,12 @@
         </div>  
     </header>
     <main>
-        <section id="about"> <!-- each h1 are jumplinked to go back to the top, no more needless scrolling !! -->
+        <section id="about"> <!-- each h2 are jumplinked to go back to the top, no more needless scrolling !! -->
             <div class="picture">
-                <img class="me" src="./images/me.jpg" width="400px"></img>
+                <img id="me" src="./images/me.jpg" width="400px" alt="picture of me">
             </div>  
             <div class="text">
-                <a href="#header"><h2>about</h2></a>
+                <a href="#site-header"><h2>about</h2></a>
                 <p>Hi I'm Meriele! I am a student at SAIT enrolled in the Interactive Design Diploma in the UX stream.</p>
                 <p>With this website I hope to practice my skills as a web developer and, by the end of this course, hopefully get good enough to be considered the following: competent, desirable, and employable.
                 <p>yep! you heard that right. I, like the million of other creatives in the world right now, want a job out of this *audience gasps*</p>
@@ -40,43 +40,43 @@
 
                 <table class="skills">
                     <tr>
-                        <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/pr_appicon.svg"></td>
-                        <td id="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></td>
+                        <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/pr_appicon.svg" alt="premiere pro icon"></td>
+                        <td class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></td>
                     </tr>
                     <tr>
-                        <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/ae_appicon.svg"></td>
-                        <td id="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></i></td>
+                        <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/ae_appicon.svg" alt="after effects icon"></td>
+                        <td class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></td>
                     </tr>
                     <tr>
-                        <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/ps_appicon.svg"></td>
-                        <td id="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></td>
+                        <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/ps_appicon.svg" alt="photoshop icon"></td>
+                        <td class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></td>
                     </tr>
                     <tr>
-                        <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/ai_appicon.svg"></td>
-                        <td id="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></td>
+                        <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/ai_appicon.svg" alt="illustrator icon"></td>
+                        <td class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></td>
                     </tr>
                 </table>
             </div>
         </section>
 
-        <a href="#header"><h2>works</h2></a>
+        
         <section id="works">
-            <div class="portimg">
-                <img src="./images/img_the_favourite_poster.jpg" alt="movie poster hand with red rope attached to a crown.">
-                <img src="./images/img_scott_pilgrim_vs_the_world.jpg" alt="movie poster with purple background" >
-                <img src="./images/img_russian_doll_poster.jpg" alt= "abstract psoter of russian doll" >
-            </div>
-            <div class="portimg">
-                <video src="./images/the_great_edit_viola_d'amore.mp4" title="the great edit viola d'amore" controls></video>
-                <video src="./images/succession_money_money_money.mp4" title="succession money money money" controls></video>
-                <video src="./images/scott_pilgrim_v_the_world.mp4"  title="scott pilgrim v the world" controls></video>
-            </div>
+            <a href="#site-header"><h2>works</h2></a>
+                <div class="portimg">
+                    <img src="./images/img_the_favourite_poster.jpg" alt="movie poster hand with red rope attached to a crown.">
+                    <img src="./images/img_scott_pilgrim_vs_the_world.jpg" alt="movie poster with purple background" >
+                    <img src="./images/img_russian_doll_poster.jpg" alt= "abstract psoter of russian doll" >
+                </div>
+                <div class="portimg">
+                    <video src="./images/the_great_edit_viola_d'amore.mp4" title="the great edit viola d'amore" controls></video>
+                    <video src="./images/succession_money_money_money.mp4" title="succession money money money" controls></video>
+                    <video src="./images/scott_pilgrim_v_the_world.mp4"  title="scott pilgrim v the world" controls></video>
+                </div>
         </section>
-        <a href="#header"><h2>get in touch</h2></a>
         <section id="contacts">
-            <a href="#header">
+            <a href="#site-header"><h2>get in touch</h2></a>
                 <div class="con">   
-                        <a href="https://www.instagram.com/merileaks/" ><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/merileaks/"><i class="fa fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/in/meriele-aberca-381151203/"><i class="fa fa-linkedin"></i></a>
                         <a href="https://twitter.com/logout"><i class="fa fa-twitter"></i></a>
                 </div>

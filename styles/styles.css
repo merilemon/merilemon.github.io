@@ -1,5 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
 
+  
+@media only screen and (max-width: 767px) {
+
+   body {
+        font-size: 12px;
+        
+   }
+
+   #site-header {
+        flex-direction: column;
+        padding-top: 30px;
+   }
+
+   #about {
+        flex-direction: column;
+   }
+
+    .text {
+        max-width: 100%;
+   }
+
+   .text p {
+        text-indent: 0px;
+   }
+
+   #me {
+        width: 200px;
+   }
+
+   #contacts i {
+        font-size: 10px;
+   }
+
+
+}
 * {
     margin: 0;
     padding: 0;
@@ -13,13 +48,17 @@ body {
     font-family: 'Roboto';
     font-weight: 300;
     background-color: #f8f8f8;
-    line-height: 25px;
 }
 
 p {
     padding-bottom: 10px;
     text-indent: 15px;
 }
+
+img {
+    max-width: 100%;
+}
+
 
 ul {
     list-style-type: circle;
@@ -41,30 +80,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 20 px;
     font-weight: 900;
     /* color: #FFC547; */
 }
 
 h2, h3 {
     line-height: 50px;
-}
-
-h2 {
     text-align: center;
 }
 
-h3 {
-    text-align: center;
-}
+
 
 /* header section */
-.site-header {
+#site-header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    
 }
 
 .nav a {
@@ -81,9 +113,11 @@ h3 {
 
 }
 
-img {
-    max-width: 100%;
+.picture img {
+    border-radius: 10px;
+    border: 10px solid #FFC547;
 }
+
 
 .text {
     padding-left: 50px;
@@ -111,13 +145,19 @@ img {
 
 .skills img {
     width: 30px;
+    transition: 0.3s;
+    border-radius: 5px;
 }
 
-#star {
+.skills img:hover {
+    box-shadow: 0 0 10px rgba(33,33,33,.2);
+}
+
+.star {
     text-align: right;
 }
 
-#star:hover {
+.star:hover {
     color: #FFC547;
     opacity: 1; 
     transition: 0.5s;
@@ -145,11 +185,17 @@ img {
 #contacts {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 #contacts i {
     font-size: 24px;
     padding:10px;
+}
+
+.con {
+    display: flex;
+    justify-content: center;
 }
 
 footer {
