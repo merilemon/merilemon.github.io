@@ -21,6 +21,21 @@ p {
     text-indent: 15px;
 }
 
+ul {
+    list-style-type: circle;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #00000095;
+    opacity: 1;
+    transition: 0.5s;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
@@ -35,10 +50,15 @@ h2, h3 {
     line-height: 50px;
 }
 
-h3 {
-    padding-left: 210px;
+h2 {
+    text-align: center;
 }
 
+h3 {
+    text-align: center;
+}
+
+/* header section */
 .site-header {
     display: flex;
     justify-content: space-around;
@@ -50,6 +70,8 @@ h3 {
 .nav a {
     padding-left: 20px;
 }
+
+/* about section */
 
 #about {
     display: flex;
@@ -63,23 +85,28 @@ img {
     max-width: 100%;
 }
 
-.img:hover {
-    colo
-}
-
 .text {
     padding-left: 50px;
     width: 600px;
 }
 
+/* skills table styling*/
+
 .skills {
     padding-top: 10px;
     gap: 5px;
     margin: auto;
+    align-self: center;
+}
+
+.skills table {
+    align-self: center;
+    padding: 30px;
 }
 
 .skills td {
-    padding-right: 100px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 .skills img {
@@ -99,19 +126,42 @@ img {
 .portimg {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 10px;
 }
 
-ul {
-    list-style-type: circle;
+.portimg img {  
+    object-fit: cover;
+    max-width: 100%;
+    overflow-y: hidden;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
+.portimg video {  
+    object-fit: cover;
+    max-width: 100%;
+    overflow-y: hidden;
 }
 
-a:hover {
-    color: #00000095;
-    animation: fadeIn 1s;
+#contacts {
+    display: flex;
+    justify-content: center;
 }
+
+#contacts i {
+    font-size: 24px;
+    padding:10px;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 12px ;
+}
+
+footer:hover {
+    color: #FFC547;
+    opacity: 1;
+    transition: 0.5s;
+}
+
 
