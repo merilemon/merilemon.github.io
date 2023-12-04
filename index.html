@@ -10,6 +10,7 @@
     <title>meriele's silly little portfolio</title>
     <link href="./styles/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script async src="./java.js"></script>
 </head>
 
 <body>
@@ -29,7 +30,8 @@
         <section id="about"> <!-- each h2 are jumplinked to go back to the top, no more needless scrolling !! -->
             <div class="picture">
                 <img id="me" src="./images/me.jpg" width="400px" alt="picture of me">
-            </div>  
+                <button id="btn-alert" onclick="balrt()">click me !</button>
+            </div> 
             <div class="text">
                 <a href="#site-header"><h2>about</h2></a>
                 <p>Hi I'm Meriele! I am a student at SAIT enrolled in the Interactive Design Diploma in the UX stream.</p>
@@ -58,8 +60,6 @@
                 </table>
             </div>
         </section>
-
-        
         <section id="works">
             <a href="#site-header"><h2>works</h2></a>
                 <div class="portimg">
@@ -72,6 +72,10 @@
                     <video src="./images/succession_money_money_money.mp4" title="succession money money money" controls></video>
                     <video src="./images/scott_pilgrim_v_the_world.mp4"  title="scott pilgrim v the world" controls></video>
                 </div>
+                <div class="btn">
+                    <button id="btn-counter">will be a heart</button>
+                    <span><p id="txt-counter">Number: 1</p></span>
+                </div>
         </section>
         <section id="contacts">
             <a href="#site-header"><h2>get in touch</h2></a>
@@ -83,8 +87,8 @@
         </section>
     </main>
     <p></p>
-    <footer>
-        &copy; Meriele Anne Aberca, 2023
+    <footer id="foot">
+        &copy; Meriele Anne Aberca, <span id="yr"></span>
     </footer>
 </body>
 </html>
