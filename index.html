@@ -39,25 +39,29 @@
                 <p>yep! you heard that right. I, like the million of other creatives in the world right now, want a job out of this *audience gasps*</p>
 
                 <h3>skills</h3>
+                <div class="skl">
+                    <table class="skills">
 
-                <table class="skills">
-                    <tr>
-                        <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/pr_appicon.svg" alt="premiere pro icon"></td>
-                        <td class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></td>
-                    </tr>
-                    <tr>
-                        <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/ae_appicon.svg" alt="after effects icon"></td>
-                        <td class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></td>
-                    </tr>
-                    <tr>
-                        <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/ps_appicon.svg" alt="photoshop icon"></td>
-                        <td class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></td>
-                    </tr>
-                    <tr>
-                        <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/ai_appicon.svg" alt="illustrator icon"></td>
-                        <td class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></td>
-                    </tr>
-                </table>
+                        <tr>
+                            <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/pr_appicon.svg" alt="premiere pro icon"></td>
+                            <td class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/ae_appicon.svg" alt="after effects icon"></td>
+                            <td class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/ps_appicon.svg" alt="photoshop icon"></td>
+                            <td class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/ai_appicon.svg" alt="illustrator icon"></td>
+                            <td class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-full"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                
             </div>
         </section>
         <section id="works">
@@ -73,8 +77,8 @@
                     <video src="./images/scott_pilgrim_v_the_world.mp4"  title="scott pilgrim v the world" controls></video>
                 </div>
                 <div class="btn">
-                    <button id="btn-counter">will be a heart</button>
-                    <span><p id="txt-counter">Number: 1</p></span>
+                    <button id="btn-counter"><i class="fa fa-heart" onclick="this.style.color='#D22B2B';" style="font-size: 15px; "></i></button>
+                    <span id="txt-counter" class="odd">likes — 1</span>
                 </div>
         </section>
         <section id="contacts">
@@ -85,6 +89,8 @@
                         <a href="https://twitter.com/logout"><i class="fa fa-twitter"></i></a>
                 </div>
         </section>
+
+        <ol id="numbers"></ol>
     </main>
     <p></p>
     <footer id="foot">

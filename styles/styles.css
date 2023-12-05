@@ -129,6 +129,11 @@ h2, h3 {
 
 /* skills table styling*/
 
+.skl {
+    display: inline;
+    justify-content:space-around;
+}
+
 .skills {
     padding-top: 10px;
     gap: 5px;
@@ -191,6 +196,9 @@ h2, h3 {
     transition: 0.5s;
 }
 
+/* even odd list*/
+
+
 /* portfolio */
 
 .portimg {
@@ -226,6 +234,29 @@ h2, h3 {
 .con {
     display: flex;
     justify-content: center;
+}
+
+/* counter */
+
+#btn-counter {
+    width: 30px;
+    height: 30px;
+    border-style: none;
+    border-radius: 50%;
+    background-color:#FFC547;
+}
+
+#txt-counter {
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.odd {
+    color: #FFC547;
+}
+
+.even {
+    color: #FFC0CB;
 }
 
 footer {
