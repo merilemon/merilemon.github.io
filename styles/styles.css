@@ -89,8 +89,6 @@ h2, h3 {
     text-align: center;
 }
 
-
-
 /* header section */
 #site-header {
     display: flex;
@@ -113,9 +111,14 @@ h2, h3 {
 
 }
 
+.picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .picture img {
     border-radius: 10px;
-    border: 10px solid #FFC547;
 }
 
 
@@ -125,6 +128,11 @@ h2, h3 {
 }
 
 /* skills table styling*/
+
+.skl {
+    display: inline;
+    justify-content:space-around;
+}
 
 .skills {
     padding-top: 10px;
@@ -163,6 +171,36 @@ h2, h3 {
     transition: 0.5s;
 }
 
+/* button */
+
+.btn {
+    text-align: center;
+}
+
+#btn-alert {
+    font-weight: 700;
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #FFC547;
+    border-width: 1px;
+    background-color: #FFC547;
+    margin-top: 10px;
+}
+
+#btn-alert:hover {
+    background-color: #f8f8f8;
+    border-color: #FFC547;
+    border-width: 1px;
+    transition: 0.5s;
+}
+
+/* even odd list*/
+
+
+/* portfolio */
+
 .portimg {
     display: flex;
     justify-content: space-between;
@@ -196,6 +234,29 @@ h2, h3 {
 .con {
     display: flex;
     justify-content: center;
+}
+
+/* counter */
+
+#btn-counter {
+    width: 30px;
+    height: 30px;
+    border-style: none;
+    border-radius: 50%;
+    background-color:#FFC547;
+}
+
+#txt-counter {
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.odd {
+    color: #FFC547;
+}
+
+.even {
+    color: #FFC0CB;
 }
 
 footer {
